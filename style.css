@@ -1,5 +1,35 @@
 body {
 	margin: 0;
+	background-color: ;
+	font-family: inter;
 	text-align: center;
 }
 
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.upper-part {
+	background-color: #6943FF;
+	padding: 12px;
+	width: 50%;
+}
+
+.lower-part {
+	background-color: #1F2937;
+	padding: 12px;
+	width: 50%;
+}
+
+button {
+	margin: 12px;
+}
+
+h2 {
+	border: 2px solid #B295FF; 
+	padding: 2px;
+  }
+  
