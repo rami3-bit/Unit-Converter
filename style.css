@@ -1,9 +1,11 @@
 body {
-	margin: 0;
+	margin: 24px;
 	background-color: ;
 	font-family: inter;
 	text-align: center;
+	
 }
+
 
 .container {
 	display: flex;
@@ -16,6 +18,11 @@ body {
 	background-color: #6943FF;
 	padding: 12px;
 	width: 50%;
+	font-family: Inter;
+font-weight: 800;
+font-size: 28px;
+line-height: 38px;
+
 }
 
 .lower-part {
