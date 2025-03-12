@@ -23,6 +23,7 @@ body {
 	line-height: 38px;
 	padding: 24px;
 	flex-direction: column;
+	width: 50%;
 }
 
 .lower-part {
@@ -30,16 +31,13 @@ body {
 	padding: 12px;
 	font-weight: 600px;
 	color: #CCC1FF;
-
+	width: 50%;
 }
 
 .lower-part > div {
 background-color: #273549;
 padding: 24px;
 margin: 2em;
-text-align: center;
-width:auto;
-
 }
 
 button {
@@ -75,3 +73,12 @@ height: 83px;
 	border-width: 2px;
 }
 
+h3 {
+font-family: Inter;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+
+}
