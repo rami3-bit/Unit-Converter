@@ -17,22 +17,33 @@ body {
 .upper-part {
 	background-color: #6943FF;
 	padding: 12px;
-	width: 50%;
+	width: 100%;
 	font-family: Inter;
-font-weight: 800;
-font-size: 28px;
-line-height: 38px;
-
+	font-weight: 800;
+	font-size: 28px;
+	line-height: 38px;
+	padding: 24px;
+	flex-direction: column;
 }
 
 .lower-part {
 	background-color: #1F2937;
 	padding: 12px;
-	width: 50%;
+	font-weight: 600px;
+	color: #CCC1FF;
+	padding: 24px;
+	width: 100%;
+}
+
+.lower-part > div {
+background-color: #273549;
 }
 
 button {
-	margin: 12px;
+	width: 117px;
+	height: 42px; 
+	border-radius: 5px;
+	margin: 24px;
 }
 
 h2 {
@@ -40,3 +51,23 @@ h2 {
 	padding: 2px;
   }
   
+h1 {
+	font-weight: 400px;
+	color: white;
+}
+
+input {
+
+	
+	background-color: #6943FF;
+	
+	border: 2px solid #B295FF;
+	border-radius: 5px;
+	font-size: 58px;
+	text-align: center;
+	color: white;
+width: 115px;
+height: 83px;
+	border-radius: 5px;
+	border-width: 2px;
+}
