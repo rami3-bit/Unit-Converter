@@ -1,9 +1,8 @@
 body {
-	margin: 24px;
-	background-color: ;
+	margin: 0;
+	background-color: black;
 	font-family: inter;
 	text-align: center;
-	
 }
 
 
@@ -12,12 +11,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	background-color: #1F2937;
 }
 
 .upper-part {
 	background-color: #6943FF;
 	padding: 12px;
-	width: 100%;
 	font-family: Inter;
 	font-weight: 800;
 	font-size: 28px;
@@ -31,19 +30,23 @@ body {
 	padding: 12px;
 	font-weight: 600px;
 	color: #CCC1FF;
-	padding: 24px;
-	width: 100%;
+
 }
 
 .lower-part > div {
 background-color: #273549;
+padding: 24px;
+margin: 2em;
+text-align: center;
+width:auto;
+
 }
 
 button {
 	width: 117px;
 	height: 42px; 
 	border-radius: 5px;
-	margin: 24px;
+	margin: 3em;
 }
 
 h2 {
@@ -71,3 +74,4 @@ height: 83px;
 	border-radius: 5px;
 	border-width: 2px;
 }
+
