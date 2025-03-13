@@ -4,8 +4,6 @@ const mass = document.getElementById("mass")
 
 const btn = document.getElementById("btn")
 
-const input = document.getElementById("input-number").value
-
 const conversionRate = {
     length: {
         metersToFeet: 3.281,
@@ -26,11 +24,15 @@ const conversionRate = {
 btn.addEventListener( "click", convert );
 
 function convert() {
-	let lengthResult = `${input} meters = ${input * metersToFeet} | ${} feet = ${} `
-	let volumeResult = `${input} litersToGallons = ${} | ${} gallonsToLiters = ${} `
-	let weightResult = `${input} kilogramsToPounds = ${} | ${} poundsToKilograms = ${} `
-	
-	
+	const input = document.getElementById("input-number").value
 
+	let lengthResult = ` ${input} meters = ${input * conversionRate.length.feetToMeters.toFixed(2)} | ${input} feet = ${input * conversionRate.length.metersToFeet.toFixed(2)} `
+	length.innerHTML = lengthResult
+
+	let volumeResult = `${input} litersToGallons = ${input * conversionRate.volume.litersToGallons.toFixed(2)} | ${input} gallonsToLiters = ${input * conversionRate.volume.gallonsToLiters.toFixed(2)} `
+	volume.innerHTML = volumeResult
+
+	let massResult = `${input} kilogramsToPounds = ${input * conversionRate.weight.kilogramsToPounds.toFixed(2)} | ${input} poundsToKilograms = ${input * conversionRate.weight.poundsToKilograms.toFixed(2)} `
+	mass.innerHTML = massResult
+	
 }
-console.log(convert)
