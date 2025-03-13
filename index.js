@@ -1,29 +1,36 @@
-/*
-1 meter = 3.281 feet
-1 liter = 0.264 gallon
-1 kilogram = 2.204 pound
-*/
-
-
 const length = document.getElementById("length");
 const volume = document.getElementById("volume")
 const mass = document.getElementById("mass")
 
 const btn = document.getElementById("btn")
-const number = document.getElementById("number")
 
-// length
-const metersToFeet = 3.281; // 1 meter = 3.281 feet
-const feetToMeters = 0.3048; // 1 foot = 0.3048 meter
-// volume
-const litersToGallons = 0.264; // 1 liter = 0.264 gallon
-const gallonsToLiters = 3.785; // 1 gallon = 3.785 liter
-// weight
-const kilogramsToPounds = 2.204; // 1 kilogram = 2.204 pounds
-const poundsToKilograms = 0.4536; // 1 pound = 0.4536 kilogram
+const input = document.getElementById("input-number").value
+
+const conversionRate = {
+    length: {
+        metersToFeet: 3.281,
+        feetToMeters: 0.3048
+    },
+    volume: {
+        litersToGallons: 0.264,
+        gallonsToLiters: 3.785
+    },
+    weight: {
+        kilogramsToPounds: 2.204,
+        poundsToKilograms: 0.4536
+    }
+};
+
+
 
 btn.addEventListener( "click", convert );
 
 function convert() {
+	let lengthResult = `${input} meters = ${input * metersToFeet} | ${} feet = ${} `
+	let volumeResult = `${input} litersToGallons = ${} | ${} gallonsToLiters = ${} `
+	let weightResult = `${input} kilogramsToPounds = ${} | ${} poundsToKilograms = ${} `
 	
+	
+
 }
+console.log(convert)
